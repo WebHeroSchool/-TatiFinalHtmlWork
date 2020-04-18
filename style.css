@@ -1,0 +1,26 @@
+body{
+	max-width: 1200px;
+    margin: auto;
+}/*-------header----------*/
+
+/*-------main----------*/
+.main{
+	background: #E5E5E5;
+}
+
+/*-------clatch----------*/
+.clatch{
+	background: #FAE8E4;
+}
+
+.clatch__description-test{
+	font-family: 'Montserrat';
+    font-weight: normal;
+    font-style: normal;
+}
+/*-------total----------*/
+.total, .footer{
+	background: #EBE3D8;
+}
+/*-------footer----------*/
+
