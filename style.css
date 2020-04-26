@@ -1,16 +1,22 @@
 body{
 	max-width: 1440px;
-    margin: auto;
+    margin: 0 auto;
     background: #E5E5E5;
 }/*-------header----------*/
-.header, .header__menu-icon{
-	height: 92px;
+.header{	
+	display: flex;
+    justify-content: space-between;
+    padding-bottom: 63px;
 }
 .header__title{
+	padding-top: 6px;
+    padding-left: 52px;
+}
+.header__logo{
 	color: white;
 	font: normal 500 30px/100px Montserrat;
-	letter-spacing: 0.07em;
-	margin:0 230px 0 65px;
+	letter-spacing: 0.07em;	
+	margin-right: 236px;
 }
 .header__language{
 	color: white;
@@ -18,30 +24,37 @@ body{
 }
 .header__menu-icon{
 	height: 92px;
-	width: 92px;	
-	float: right;
+	width: 92px;		
 }
 /*-------main----------*/
+.main__content{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .main, .header{	
 	background: linear-gradient(to right, black 32%, white 32%);
 }
 .main__photo{
-	max-width: 500px;
-	margin: 100px 0px 100px 150px;	
+	max-width: 550px;	
+	margin-right: 46px;	
 }
-.main__article{
-	float: right;
-	max-width: 475px;
-	margin:100px 250px 0 0;
+.main__article{	
+	max-width: 475px;	
+	padding-bottom: 67px;
 }
 .main__title{
-	font: normal bold 80px/82px Montserrat;
-	margin-bottom: 20px;
+	font: normal bold 80px/82px Montserrat;	
+	margin-bottom: 0;
+	padding-left: 10px;
+}
+..main__arrow-down{
+	display: none;
 }
 .main__description{
-	width: 467px;
 	font: normal normal 15px/21px Montserrat;	
-	margin-bottom: 35px;
+	width: 467px;
+	padding-left: 10px;	
 }
 .main__btn{
 	background: white;
@@ -49,7 +62,7 @@ body{
 	width: 203px;
 	height: 44px;
 	font: normal 500 13px Montserrat;
-	margin-right: 30px;
+    margin-right: 35px;	
 }
 .main__link{
 	color: black;
@@ -57,38 +70,38 @@ body{
 	font: normal 500 13px Montserrat;
 }
 .main__arrow{
-	margin-left: 19px;
+	margin-left: 14px;
 }
 .main__footer{
-	margin-left: 65px;
-    padding-bottom: 40px;
+	padding: 70px 50px;
+}
+.main__facebook{
+	margin-right: 495px;
 }
 .main__btn_scroll{
-	position: relative;
-	left: 30%;
 	background: white;
 	border: none;	
 }
-.main__scroll{
-	position: absolute;
-    top: 22%;
-    left: 45%;
-}
 /*-------clatch----------*/
-.clatch{
+/*.clatch{
 	background: #FAE8E4;
 }
-/*.clatch__photo-blue{
-	position: relative;
+.clatch__photo{
 }
-.clatch__photo-pink{
-	position: absolute;
-    top: 22%;
-    left: 45%;
-}*/
+*/
 /*-------total----------*/
-.total, .footer{
+/*.total, .footer{
 	background: #EBE3D8;
-}
+}*/
 /*-------footer----------*/
 
+@media (min-width:320px) {
+	.header__language, 
+	.main__description, .main__btn, .main__link,
+	.main__footer{
+		display: none;
+	}
+	.main__arrow-down{
+		display: block;
+	}
+}
