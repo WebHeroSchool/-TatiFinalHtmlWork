@@ -30,8 +30,7 @@ body{
 /*-------main----------*/
 .main__content{
 	display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;   
 }
 .main, .header{	
 	background: linear-gradient(to right, black 32%, white 32%);
@@ -42,7 +41,7 @@ body{
 }
 .main__article{	
 	max-width: 475px;	
-	padding-bottom: 67px;
+	padding-top: 25px;	
 }
 .main__title{
 	font: normal bold 80px/82px Montserrat;	
@@ -55,7 +54,8 @@ body{
 .main__description{
 	display: block;
 	font: normal normal 15px/21px Montserrat;	
-	width: 467px;
+	width: 467px;	
+	margin-bottom: 35px;
 	padding-left: 10px;	
 }
 .main__btn{
@@ -65,7 +65,8 @@ body{
 	width: 203px;
 	height: 44px;
 	font: normal 500 13px Montserrat;
-    margin-right: 35px;	
+	margin-left: 6px;
+    margin-right: 29px;	
 }
 .main__link{
 	display: inline-block;
@@ -105,6 +106,36 @@ body{
 	.main__description, .main__btn, .main__link,
 	.main__footer{
 		display: none;
+	}
+	body, .main, .header{	
+		background: white;
+	}	
+	.header{
+		padding-bottom: 0;
+	}
+	.header__logo{
+		color: black;
+		font: normal 500 30px/37px Montserrat;
+		text-align: center;
+		letter-spacing: 0.07em;
+		margin-right: 0;
+	}
+	.header__menu-icon{
+		width: 70px;
+		height: 69px
+	}
+	.main__content{
+		display: block;
+	}
+	.main__article {
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;
+		padding-top: 0;
+	}
+	.main__title{
+		font: normal bold 50px/51px Montserrat;	
+    	padding-left: 22px;
 	}
 	.main__arrow-down{
 		display: block;
