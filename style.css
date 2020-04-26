@@ -19,6 +19,7 @@ body{
 	margin-right: 236px;
 }
 .header__language{
+	display: inline-block;
 	color: white;
 	font: normal 500 20px Montserrat;	
 }
@@ -48,15 +49,17 @@ body{
 	margin-bottom: 0;
 	padding-left: 10px;
 }
-..main__arrow-down{
+.main__arrow-down{
 	display: none;
 }
 .main__description{
+	display: block;
 	font: normal normal 15px/21px Montserrat;	
 	width: 467px;
 	padding-left: 10px;	
 }
 .main__btn{
+	display: inline-block;
 	background: white;
 	border: 1.5px solid #000000;
 	width: 203px;
@@ -65,6 +68,7 @@ body{
     margin-right: 35px;	
 }
 .main__link{
+	display: inline-block;
 	color: black;
 	text-decoration: none;
 	font: normal 500 13px Montserrat;
@@ -73,6 +77,7 @@ body{
 	margin-left: 14px;
 }
 .main__footer{
+	display: block;
 	padding: 70px 50px;
 }
 .main__facebook{
@@ -95,7 +100,7 @@ body{
 }*/
 /*-------footer----------*/
 
-@media (min-width:320px) {
+@media screen and (max-width: 999px) {
 	.header__language, 
 	.main__description, .main__btn, .main__link,
 	.main__footer{
