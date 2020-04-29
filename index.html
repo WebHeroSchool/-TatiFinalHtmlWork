@@ -20,12 +20,11 @@
 		</header>		
 		<section class="main">
 			<div class="main__content">	
-		        <img class="main__photo"
-		        	 srcset="img/pete-bellis-small.png 375w,
-		                     img/pete-bellis.png 549w"
-		             sizes="(max-width: 600px) 375px,
-		                    549px"
-		             src="img/pete-bellis" alt="Девушка с рюкзаком">
+				 <picture>  
+					<source srcset="img/pete-bellis-small.png" media="(max-width: 768px)"> 
+					<source srcset="img/pete-bellis.png"> 
+					<img class="main__photo" srcset="img/pete-bellis.png" alt="Девушка с рюкзаком">
+				</picture>
 				<article class="main__article">					
 					<h1 class="main__title">Новая коллекция</h1>
 					<img class="main__arrow-down" src="img/Slice 2.png" alt="Стрелка вниз"> 
@@ -48,49 +47,59 @@
 				</button>		
 			</div>		 
 		</section>
-		<!--<section class="clatch">
-			<img class="clatch__photo" src="img/clatch.png" alt="Кожаные клатчи">			
-			<article class="clatch__article">
-				<h1 class="clatch__title">Кожаный клатч</h1>
-				<h3 class="clatch__subtitle">осенняя коллекция</h3>
-				<p class="clatch__description">Бесплатная доставка включена. Предложение действует на сайти loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазнах предложение не суммируется с другими акциями, предложениями и распродажей.</p>	
-				<div class="clatch__detail">
-					<span class="clatch__gray-point"></span>
-					<span class="clatch__pink-point"></span>
-					<span class="clatch__blue-point"></span>
-					<span class="clatch__green-point"></span>
-					<span class="clatch__price">1990 &#8381;</span>
-				</div>
-				<button class="clatch__btn-minus">-</button>
-				<span class="clatch__number"> 1 </span>
-				<button class="clatch__btn-plus">+</button>
-				<button class="clatch__btn-add">Добавить в корзину</button>
-			</article>
-			<a class="clatch__link" href="#">
-				Другие товары на LOCO.COM
-				<img class="clatch__link-icon" src="img/Vector 2.2.png" alt="Стрелка вправо">
-			</a>
+		<!-- <section class="clatch"> 
+			<img class="clatch__photo" src="img/clatch.png" alt="Кожаные клатчи">
+			<div class="clatch__content">		
+				<article class="clatch__article">
+					<h1 class="clatch__title">Кожаный клатч</h1>
+					<h3 class="clatch__subtitle">осенняя коллекция</h3>
+					<p class="clatch__description">Бесплатная доставка включена. Предложение действует на сайти loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазнах предложение не суммируется с другими акциями, предложениями и распродажей.</p>	
+					<div class="clatch__detail">
+						<span class="clatch__points">
+							<p class="clatch__gray-point"></p>
+							<p class="clatch__pink-point"></p>
+							<p class="clatch__blue-point"></p>
+							<p class="clatch__green-point"></p>
+						</span>
+						<span class="clatch__price">1990 &#8381;</span>
+					</div>
+					<button class="clatch__btn-minus-plus">
+						<span class="clatch__btn-minus">-</span>
+						1
+						<span class="clatch__btn-plus">+</span>
+					</button>
+					<button class="clatch__btn-add">ДОБАВИТЬ В КОРЗИНУ</button>
+				</article>
+				<a class="clatch__link" href="#">
+					ДРУГИЕ ТОВАРЫ НА LOCO.COM
+					<img class="clatch__link-icon" src="img/Vector 2.2.png" alt="Стрелка вправо">
+				</a>
+			</div>	
 		</section>
 		<section class="total">
 			<img class="total__photo" src="img/photo-1516762689617-e1cffcef479d.png" alt="Джинсы, свитер, обувь">
-			<article class="total__article">
-				<h1 class="total__title">Serene Total Look</h1>
-				<h3 class="total__subtitle">осенняя коллекция</h3>
-				<p class="total__description">Джинсы, свитер, обувь.<br>
-			    В комплект также входит пакет ароматного чая и кружка.</p>
-			    <button class="total__btn-minus">-</button>
-				<span class="total__number"> 1 </span>
-				<button class="total__btn-plus">+</button>
-			    <button class="total__btn-add">Добавить в корзину</button>
-			</article>
-		    <a class="total__link" href="#">
-		    	Другие товары на LOCO.COM
-		    	<img class="total__link-icon" src="img/Vector 2.3.png" alt="Стрелка вправо">
-		    </a>
+			<div class="total__content">
+				<article class="total__article">
+					<h1 class="total__title">Serene Total Look</h1>
+					<h3 class="total__subtitle">осенняя коллекция</h3>
+					<p class="total__description">Джинсы, свитер, обувь.<br>
+				    В комплект также входит пакет ароматного чая и кружка.</p>
+				    <button class="total__btn-minus-plus">
+						<span class="total__btn-minus">-</span>
+						1
+						<span class="total__btn-plus">+</span>
+					</button>
+					<button class="total__btn-add">ДОБАВИТЬ В КОРЗИНУ</button>
+				</article>
+			    <a class="total__link" href="#">
+			    	ДРУГИЕ ТОВАРЫ НА LOCO.COM
+			    	<img class="total__link-icon" src="img/Vector 2.3.png" alt="Стрелка вправо">
+			    </a>
+		    </div>
 		</section>	
-		<footer class="footer">
+		<footer class="footer"> 
 			<p class="footer__txt">
-				Разработано в <img class="footer__logo"src="img/Маленький желто-белый-svg.png" alt="Web Hero School логотип">
+				РАЗРАБОТАНО В <img class="footer__logo"src="img/Маленький желто-белый-svg.png" alt="Web Hero School логотип">
 			</p>
 		</footer>	-->
 	</body>
