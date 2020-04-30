@@ -1,8 +1,8 @@
 body{
 	max-width: 1440px;
-    margin: 0 auto;
-    background: #E5E5E5;
-}/*-------------------header-------------------*/
+    margin: 0 auto;    
+}
+/*-------------------header-------------------*/
 .header{	
 	display: flex;
     justify-content: space-between;
@@ -31,6 +31,7 @@ body{
 .main__content{
 	display: flex;
     justify-content: center;   
+    overflow-x: scroll;	
 }
 .main, .header{	
 	background: linear-gradient(to right, black 32%, white 32%);
@@ -115,32 +116,27 @@ body{
 	display: flex;
     justify-content: space-between;
 }
-.clatch__gray-point{
-	display: inline-block;
-	background: #DEDEDE;
+.clatch__gray-point, .clatch__blue-point, 
+.clatch__green-point{
+	display: inline-block;	
 	width: 30.18px;
 	height: 30px;	
 	border-radius: 50%;
+}
+.clatch__gray-point{	
+	background: #DEDEDE;	
+}
+.clatch__blue-point{	
+	background: #A8BFF9;
+}
+.clatch__green-point{
+	background: #90BD8F;
 }
 .clatch__pink-point{	
 	display: inline-block;
 	background: #F29F9F;
 	width: 38px;
 	height: 38px;
-	border-radius: 50%;
-}
-.clatch__blue-point{
-	display: inline-block;
-	background: #A8BFF9;
-	width: 30.18px;
-	height: 30px;
-	border-radius: 50%;
-}
-.clatch__green-point{
-	display: inline-block;
-	background: #90BD8F;
-	width: 30.18px;
-	height: 30px;
 	border-radius: 50%;
 }
 .clatch__price{
@@ -167,10 +163,10 @@ body{
 	color: black;
 	text-decoration: none;
 	font: normal 500 13px/16px Montserrat;
-}
+}*/
 /*-------------------total-------------------*/
 /*.total, .footer{
-	background: #EBE3D8;
+	background: linear-gradient(to right, #EBE3D8 30%, black 30%, black 35%, #EBE3D8 35%);
 }
 .total{
 	display: flex;
@@ -185,23 +181,31 @@ body{
 	max-width: 475px;
 	max-height: 351px;	
 }
+.total__btn-minus-plus,.total__btn-add{
+	background: #FAE8E4;
+}
+.total__link{
+	display: block;
+}*/
 /*-------------------footer-------------------*/
 /*.footer{
 	display: flex;
     justify-content: flex-end;
+    margin-bottom: 100px;
 }
 .footer__txt{
 	font: normal bold 12px/15px Montserrat;
 }*/
 
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 768px) {
 	.header__language, 
 	.main__description, .main__btn, .main__link,
-	.main__footer{
+	.main__footer,
+	.footer{
 		display: none;
 	}
-	body, .main, .header{	
+	.main, .header{	
 		background: white;
 	}	
 	.header{
@@ -222,20 +226,24 @@ body{
 		width: 70px;
 		height: 69px
 	}
+	/*-------------------main-------------------*/
 	.main__content{
 		display: block;
-		position: relative;
+		position: relative;			
 	}
 	.main__photo{
 		width: 100%;
-		margin-right: 0; 
+		max-width: 768px;
+		margin-right: 0;
 	}
 	.main__article {
+		width: 100%;
+		max-width: 768px;
 		display: flex;
     	flex-direction: column;
     	align-items: center;		
 		position: absolute;
-    	bottom: 20px;
+    	bottom: 5%;
 	}
 	.main__title{
 		font: normal bold 50px/51px Montserrat;	
@@ -244,4 +252,64 @@ body{
 	.main__arrow-down{
 		display: block;
 	}
+	/*-------------------clatch-------------------*/
+	/*.clatch{
+	    flex-direction: column;
+	    align-items: center;
+	}
+	.clatch__photo {
+	    width: 100%;
+	}
+	.clatch__article {
+	    max-width: 320px;
+	    max-height: 281px;
+	}
+	.clatch__title, .total__title{
+		font: normal bold 20px/20px Montserrat;
+	}
+	.clatch__subtitle, .total__subtitle{
+		font: normal bold 10px/10px Montserrat;
+	}
+	.clatch__description, .total__description{
+		font: normal normal 9px/13px Montserrat;
+	}
+	.clatch__btn-minus-plus, .clatch__link, 
+	.total__btn-minus-plus{
+		display: none;
+	}
+	.clatch__gray-point, .clatch__blue-point, 
+	.clatch__green-point{
+		width: 23.35px;
+		height: 22.89px;
+	}
+	.clatch__pink-point{
+		width: 29.39px;
+		height: 29px;
+	}
+	.clatch__price{
+		font: normal bold 20px/28px Montserrat;
+	}
+	.clatch__btn-add, .total__btn-add{			
+		border: 1px solid #000000;
+		width: 260px;
+		height: 37px;
+		font: normal 500 13px Montserrat;
+	}*/
+	/*-------------------total-------------------*/
+	/*.total{
+		flex-direction: column;
+	    align-items: center;
+	}
+	.total__photo{
+		width: 100%;	
+	}
+	.total__article {
+	    max-width: 305px;
+	    max-height: 195px;
+	}
+	.total__link{
+		font: normal 500 15px/18px Montserrat;
+		float: right;
+    	max-width: 150px;
+	}*/
 }
