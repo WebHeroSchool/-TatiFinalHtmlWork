@@ -1,6 +1,7 @@
 body{
-	max-width: 1440px;
-    margin: 0 auto;    
+	max-width: 1440px;	 
+    margin: 0 auto;  
+    overflow-x: scroll;  
 }
 /*-------------------header-------------------*/
 .header{	
@@ -9,19 +10,21 @@ body{
     padding-bottom: 63px;
 }
 .header__title{
-	padding-top: 6px;
+	display: flex;
+    justify-content: space-between;
+    width: 25%;
+    padding-top: 6px;
     padding-left: 52px;
 }
 .header__logo{
 	color: white;
 	font: normal 500 30px/100px Montserrat;
 	letter-spacing: 0.07em;	
-	margin-right: 236px;
 }
-.header__language{
-	display: inline-block;
+.header__language{	    
 	color: white;
 	font: normal 500 20px Montserrat;	
+	padding-top: 37px;
 }
 .header__menu-icon{
 	height: 92px;
@@ -30,8 +33,7 @@ body{
 /*-------------------main-------------------*/
 .main__content{
 	display: flex;
-    justify-content: center;   
-    overflow-x: auto;	
+    justify-content: center;
 }
 .main, .header{	
 	background: linear-gradient(to right, black 32%, white 32%);
@@ -79,11 +81,10 @@ body{
 	margin-left: 14px;
 }
 .main__footer{
-	display: block;
+	display: flex;
+    justify-content: space-between;
+    width: 50%;
 	padding: 70px 50px;
-}
-.main__facebook{
-	margin-right: 495px;
 }
 .main__btn_scroll{
 	background: white;
@@ -94,13 +95,16 @@ body{
 	background: #FAE8E4;
 	display: flex;
     justify-content: center;
+    padding: 100px 50px;
 }
 .clatch__photo{
+	max-width: 664px;
+	max-height: 552px;
 }
 .clatch__article{
 	background: white;
-	max-width: 488px;
-    max-height: 556px;    
+	padding: 5px 0 50px 50px;
+    margin-bottom: 30px;
 }
 .clatch__title, .total__title{
 	font: normal bold 40px/41px Montserrat;
@@ -111,10 +115,12 @@ body{
 }
 .clatch__description, .total__description{
 	font: normal normal 15px/21px Montserrat;
+	max-width: 368px;
 }
 .clatch__detail{
 	display: flex;
     justify-content: space-between;
+    max-width: 368px;
 }
 .clatch__gray-point, .clatch__blue-point, 
 .clatch__green-point{
@@ -151,6 +157,7 @@ body{
 	width: 100px;
 	height: 44px;
 	font: normal 500 15px Montserrat;
+	margin-right: 20px;
 }
 .clatch__btn-add, .total__btn-add{	
 	background: white;
@@ -171,21 +178,32 @@ body{
 .total{
 	display: flex;
     justify-content: center;
+    position: relative;
+    padding: 100px 0 100px 100px;
 }
 .total__photo{
-	max-width: 827px;
+	max-width: 830px;
 	max-height: 621px;
+	margin-right: 495px;
+}
+.total__content{
+	position: absolute;
+    left: 817px;
+    top: 230px;
 }
 .total__article{
 	background: #FAE8E4;
 	max-width: 475px;
 	max-height: 351px;	
+	padding: 5px 50px 50px 50px;
+	margin-bottom: 30px;
 }
 .total__btn-minus-plus,.total__btn-add{
 	background: #FAE8E4;
 }
 .total__link{
 	display: block;
+	padding-left: 150px;
 }*/
 /*-------------------footer-------------------*/
 /*.footer{
@@ -195,10 +213,14 @@ body{
 }
 .footer__txt{
 	font: normal bold 12px/15px Montserrat;
-}*/
-
+}
+*/
 
 @media screen and (max-width: 768px) {
+	body{
+		min-width: 319px;
+    	overflow-x: scroll;
+	}
 	.header__language, 
 	.main__description, .main__btn, .main__link,
 	.main__footer,
@@ -256,6 +278,7 @@ body{
 	/*.clatch{
 	    flex-direction: column;
 	    align-items: center;
+	    padding: 50px 10px;
 	}
 	.clatch__photo {
 	    width: 100%;
@@ -297,15 +320,21 @@ body{
 	}*/
 	/*-------------------total-------------------*/
 	/*.total{
-		flex-direction: column;
-	    align-items: center;
+		display: block;
+		position: relative;
+    	padding: 50px 5px;
 	}
 	.total__photo{
-		width: 100%;	
+		width: 100%;			
+	}
+	.total__content{
+		left: 29px;
+    	top: 290px;
 	}
 	.total__article {
 	    max-width: 305px;
 	    max-height: 195px;
+	    padding: 5px 10px 10px 10px;
 	}
 	.total__link{
 		font: normal 500 15px/18px Montserrat;
@@ -313,3 +342,4 @@ body{
     	max-width: 150px;
 	}*/
 }
+
