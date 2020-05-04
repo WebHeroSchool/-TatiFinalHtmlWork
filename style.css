@@ -1,7 +1,7 @@
 body{
 	max-width: 1440px;	 
     margin: 0 auto;  
-    overflow-x: scroll;  
+    overflow-x: scroll;
 }
 /*-------------------header-------------------*/
 .header{	
@@ -34,6 +34,7 @@ body{
 .main__content{
 	display: flex;
     justify-content: center;
+    overflow: auto;
 }
 .main, .header{	
 	background: linear-gradient(to right, black 32%, white 32%);
@@ -96,6 +97,7 @@ body{
 	display: flex;
     justify-content: center;
     padding: 100px 50px;
+    overflow: auto;
 }
 .clatch__photo{
 	max-width: 664px;
@@ -117,7 +119,7 @@ body{
 	font: normal normal 15px/21px Montserrat;
 	max-width: 368px;
 }
-.clatch__detail{
+.clatch__detail, .clatch__btns, .total__btns{
 	display: flex;
     justify-content: space-between;
     max-width: 368px;
@@ -156,8 +158,7 @@ body{
 	border: 1.5px solid #000000;
 	width: 100px;
 	height: 44px;
-	font: normal 500 15px Montserrat;
-	margin-right: 20px;
+	font: normal 500 15px Montserrat;	
 }
 .clatch__btn-add, .total__btn-add{	
 	background: white;
@@ -180,6 +181,7 @@ body{
     justify-content: center;
     position: relative;
     padding: 100px 0 100px 100px;
+    overflow: auto;
 }
 .total__photo{
 	max-width: 830px;
@@ -209,15 +211,16 @@ body{
 /*.footer{
 	display: flex;
     justify-content: flex-end;
+    padding-right: 20px;
     margin-bottom: 100px;
 }
 .footer__txt{
 	font: normal bold 12px/15px Montserrat;
-}
-*/
+}*/
+
 
 @media screen and (max-width: 768px) {
-	body{
+	body{		
 		min-width: 319px;
     	overflow-x: scroll;
 	}
@@ -278,7 +281,7 @@ body{
 	/*.clatch{
 	    flex-direction: column;
 	    align-items: center;
-	    padding: 50px 10px;
+	    padding: 50px 30px 10px 30px;
 	}
 	.clatch__photo {
 	    width: 100%;
@@ -286,6 +289,7 @@ body{
 	.clatch__article {
 	    max-width: 320px;
 	    max-height: 281px;
+	    padding: 10px 20px 30px 30px;
 	}
 	.clatch__title, .total__title{
 		font: normal bold 20px/20px Montserrat;
@@ -311,6 +315,7 @@ body{
 	}
 	.clatch__price{
 		font: normal bold 20px/28px Montserrat;
+		padding-top: 20px;
 	}
 	.clatch__btn-add, .total__btn-add{			
 		border: 1px solid #000000;
@@ -323,9 +328,11 @@ body{
 		display: block;
 		position: relative;
     	padding: 50px 5px;
+    	min-height: 450px;
 	}
 	.total__photo{
-		width: 100%;			
+		width: 100%;
+		margin-right: 0;			
 	}
 	.total__content{
 		left: 29px;
@@ -334,7 +341,7 @@ body{
 	.total__article {
 	    max-width: 305px;
 	    max-height: 195px;
-	    padding: 5px 10px 10px 10px;
+	    padding: 5px 15px 20px 15px;
 	}
 	.total__link{
 		font: normal 500 15px/18px Montserrat;
