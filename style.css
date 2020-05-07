@@ -27,8 +27,8 @@ body{
 	padding-top: 37px;
 }
 .header__menu-icon{
-	height: 92px;
-	width: 92px;		
+	max-height: 92px;
+	max-width: 92px;		
 }
 /*-------------------main-------------------*/
 .main__content{
@@ -58,7 +58,7 @@ body{
 .main__description{
 	display: block;
 	font: normal normal 15px/21px Montserrat;	
-	width: 467px;	
+	max-width: 467px;	
 	margin-bottom: 35px;
 	padding-left: 10px;	
 }
@@ -66,8 +66,9 @@ body{
 	display: inline-block;
 	background: white;
 	border: 1.5px solid #000000;
-	width: 203px;
-	height: 44px;
+	max-width: 203px;
+    max-height: 44px;
+    padding: 18px 39px 12px 40px;
 	font: normal 500 13px Montserrat;
 	margin-left: 6px;
     margin-right: 29px;	
@@ -96,33 +97,42 @@ body{
 	background: #FAE8E4;
 	display: flex;
     justify-content: center;
-    padding: 100px 50px;
+    padding-top: 167px;
     overflow: auto;
 }
 .clatch__photo{
 	max-width: 664px;
-	max-height: 552px;
+	max-height: 552px;	
+    padding: 72px 87px 137px 74px;
 }
 .clatch__article{
 	background: white;
-	padding: 5px 0 50px 50px;
-    margin-bottom: 30px;
+	padding: 7px 66px 44px 54px;
+    margin-bottom: 37px;
 }
 .clatch__title, .total__title{
 	font: normal bold 40px/41px Montserrat;
+	margin-bottom: 12px;
 }
 .clatch__subtitle, .total__subtitle{
 	font: normal bold 16px/16px Montserrat;
 	letter-spacing: 0.07em;
+	opacity: 0.5;
+	margin:0 0 63px 0;
 }
 .clatch__description, .total__description{
 	font: normal normal 15px/21px Montserrat;
 	max-width: 368px;
+	opacity: 0.5;
+	margin-bottom: 29px;
+}
+.clatch__detail{
+	margin-bottom: 39px;
 }
 .clatch__detail, .clatch__btns, .total__btns{
 	display: flex;
     justify-content: space-between;
-    max-width: 368px;
+    max-width: 368px; 
 }
 .clatch__gray-point, .clatch__blue-point, 
 .clatch__green-point{
@@ -150,6 +160,7 @@ body{
 .clatch__price{
 	display: inline-block;
 	font: normal bold 40px/56px Montserrat;
+	padding: 9px 9px 0 0;
 }
 .clatch__btn-minus-plus, .total__btn-minus-plus{
 	display: inline-flex;
@@ -166,39 +177,50 @@ body{
 	width: 253px;
 	height: 44px;
 	font: normal 500 13px Montserrat;
+	padding-right: 12px;
 }
 .clatch__link, .total__link{
 	color: black;
 	text-decoration: none;
 	font: normal 500 13px/16px Montserrat;
+	padding-left: 5px;
+}
+.clatch__link-icon{
+	padding-left: 12px;
+    padding-top: 3px;
 }*/
 /*-------------------total-------------------*/
 /*.total, .footer{
-	background: linear-gradient(to right, #EBE3D8 30%, black 30%, black 35%, #EBE3D8 35%);
+	background: linear-gradient(to right, #EBE3D8 27%, black 27%, black 32%, #EBE3D8 32%);
 }
 .total{
 	display: flex;
-    justify-content: center;
-    position: relative;
-    padding: 100px 0 100px 100px;
+    justify-content: center;   
+    padding-top: 139px;
     overflow: auto;
 }
 .total__photo{
 	max-width: 830px;
 	max-height: 621px;
-	margin-right: 495px;
+    padding-left: 45px;
+	margin-bottom: 81px;	
 }
 .total__content{
-	position: absolute;
-    left: 817px;
-    top: 230px;
+    transform: translateX(-20%);
+    padding-top: 117px;
 }
 .total__article{
 	background: #FAE8E4;
 	max-width: 475px;
 	max-height: 351px;	
-	padding: 5px 50px 50px 50px;
-	margin-bottom: 30px;
+    padding: 1px 0 45px 46px;
+    margin-bottom: 38px;
+}
+.total__subtitle{
+	margin-bottom: 33px;
+}
+.total__description{
+	margin-bottom: 55px;
 }
 .total__btn-minus-plus,.total__btn-add{
 	background: #FAE8E4;
@@ -210,14 +232,15 @@ body{
 /*-------------------footer-------------------*/
 /*.footer{
 	display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
+    justify-content: flex-end;    
+    padding-right: 33px;
+    padding-bottom: 8px;
     margin-bottom: 100px;
 }
 .footer__txt{
 	font: normal bold 12px/15px Montserrat;
-}*/
-
+}
+*/
 
 @media screen and (max-width: 768px) {
 	body{		
@@ -252,12 +275,15 @@ body{
 		height: 69px
 	}
 	/*-------------------main-------------------*/
-	.main__content{
-		display: block;
-		position: relative;			
+	.main__content{		
+		position: relative;	
+	}
+	.main__picture{
+		width: 100%;
 	}
 	.main__photo{
 		width: 100%;
+		height:100%;/*?*/
 		max-width: 768px;
 		margin-right: 0;
 	}
@@ -281,7 +307,7 @@ body{
 	/*.clatch{
 	    flex-direction: column;
 	    align-items: center;
-	    padding: 50px 30px 10px 30px;
+	    padding-top: 168px;
 	}
 	.clatch__photo {
 	    width: 100%;
@@ -325,18 +351,17 @@ body{
 	}*/
 	/*-------------------total-------------------*/
 	/*.total{
-		display: block;
-		position: relative;
-    	padding: 50px 5px;
-    	min-height: 450px;
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;	
+    	padding: 50px 5px 0 5px;	
 	}
 	.total__photo{
-		width: 100%;
-		margin-right: 0;			
+		width: 100%;					
 	}
 	.total__content{
-		left: 29px;
-    	top: 290px;
+		transform: translateY(-10%);
+    	padding-top: 0;
 	}
 	.total__article {
 	    max-width: 305px;
