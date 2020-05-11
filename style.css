@@ -7,7 +7,7 @@ body{
 .header{	
 	display: flex;
     justify-content: space-between;
-    padding-bottom: 63px;
+    padding-bottom: 4.3%;
 }
 .header__title{
 	display: flex;
@@ -40,17 +40,22 @@ body{
 .main, .header{	
 	background: linear-gradient(to right, black 32%, white 32%);
 }
+.main__picture{
+	padding-left: 20px;
+}
 .main__photo{
 	width: 100%;
 	max-width: 550px;	
 	margin-right: 46px;	
 }
 .main__article{	
-	max-width: 475px;		
+	max-width: 475px;
+	margin-right: 20px;		
 }
 .main__title{
 	font: normal bold 80px/82px Montserrat;	
 	margin-bottom: 0;
+	margin-top: 30px;
 	padding-left: 10px;
 }
 .main__arrow-down{
@@ -67,11 +72,11 @@ body{
 	display: inline-block;
 	background: white;
 	border: 1.5px solid #000000;
-	width: 203px;
+	width: 42.8%;
     height: 44px;    
 	font: normal 500 13px Montserrat;
 	margin-left: 6px;
-    margin-right: 29px;	
+    margin-right: 6%;
 }
 .main__link{
 	display: inline-block;
@@ -86,24 +91,30 @@ body{
 	display: flex;
     justify-content: space-between;
     width: 50%;
-	padding: 70px 50px;
+	padding: 5.6% 3.7%;
 }
 .main__btn_scroll{
 	background: white;
 	border: none;	
+	margin-right: 2.7%;
 }
 /*-------------------clatch-------------------*/
-/*.clatch{
+.clatch{
 	background: #FAE8E4;
 	display: flex;
     justify-content: center;
-    padding-top: 167px;
+    padding-top: 11.5%;
     overflow: auto;
 }
+.clatch__picture{
+	display: flex;
+    align-items: center;
+	padding: 5% 5% 10% 4%;
+}
 .clatch__photo{
+	width: 100%;
 	max-width: 664px;
-	max-height: 552px;	
-    padding: 72px 87px 137px 74px;
+	max-height: 552px;	    
 }
 .clatch__article{
 	background: white;
@@ -170,6 +181,7 @@ body{
 	width: 100px;
 	height: 44px;
 	font: normal 500 15px Montserrat;	
+	margin-right: 4%;
 }
 .clatch__btn-add, .total__btn-add{	
 	background: white;
@@ -188,26 +200,27 @@ body{
 .clatch__link-icon{
 	padding-left: 12px;
     padding-top: 3px;
-}*/
+}
 /*-------------------total-------------------*/
-/*.total, .footer{
+.total, .footer{
 	background: linear-gradient(to right, #EBE3D8 27%, black 27%, black 32%, #EBE3D8 32%);
 }
 .total{
 	display: flex;
-    justify-content: center;   
-    padding-top: 139px;
+    justify-content: center;  
+    align-items: center; 
+    padding-top: 10%;
     overflow: auto;
 }
 .total__photo{
+	width: 100%;
 	max-width: 830px;
 	max-height: 621px;
     padding-left: 45px;
 	margin-bottom: 81px;	
 }
 .total__content{
-    transform: translateX(-20%);
-    padding-top: 117px;
+    transform: translateX(-20%);    
 }
 .total__article{
 	background: #FAE8E4;
@@ -228,9 +241,9 @@ body{
 .total__link{
 	display: block;
 	padding-left: 150px;
-}*/
+}
 /*-------------------footer-------------------*/
-/*.footer{
+.footer{
 	display: flex;
     justify-content: flex-end;    
     padding-right: 33px;
@@ -239,7 +252,7 @@ body{
 }
 .footer__txt{
 	font: normal bold 12px/15px Montserrat;
-}*/
+}
 
 
 @media screen and (max-width: 768px) {
@@ -276,13 +289,13 @@ body{
 	}
 	/*-------------------main-------------------*/
 	.main__content{		
-		position: relative;	
+		position: relative;
 	}
 	.main__picture{
 		width: 100%;
+		padding-left: 0;
 	}
-	.main__photo{
-		width: 100%;
+	.main__photo{		
 		height:100%;/*?*/
 		max-width: 768px;
 		margin-right: 0;
@@ -304,13 +317,16 @@ body{
 		display: block;
 	}
 	/*-------------------clatch-------------------*/
-	/*.clatch{
+	.clatch{
 	    flex-direction: column;
 	    align-items: center;
 	    padding-top: 0;
 	}
-	.clatch__photo {
-	    width: 100%;
+	.clatch__picture{
+		padding: 0;
+	}
+
+	.clatch__photo {	    
 	    padding: 50px 0 30px 0;
 	}
 	.clatch__article {
@@ -366,9 +382,9 @@ body{
 		width: 260px;
 		height: 37px;
 		font: normal 500 13px Montserrat;
-	}*/
+	}
 	/*-------------------total-------------------*/
-	/*.total{
+	.total{
 		background: linear-gradient(to right, #EBE3D8 27%, black 27%, black 38%, #EBE3D8 38%);
 		display: flex;
     	flex-direction: column;
@@ -381,8 +397,7 @@ body{
 	    padding: 0;					
 	}
 	.total__content{
-		transform: translateY(-10%);
-	    padding: 0 0 0 30px;
+		transform: translateY(-10%);	    
 	    width: 82%;
 	}
 	.total__article {
@@ -398,6 +413,18 @@ body{
 		font: normal 500 15px/18px Montserrat;
 		float: right;
     	max-width: 150px;
-	}*/
+	}
 }
 
+@media (min-width:769px) and (max-width: 900px) {
+	.main__title{
+		font: normal bold 60px/62px Montserrat;
+	}
+	.main__description{
+		font: normal normal 12px/18px Montserrat;
+	}
+	.main__btn, .main__link{
+		font-size: 10px;
+		width: 36%;
+	}
+}
