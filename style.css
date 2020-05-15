@@ -253,8 +253,7 @@ button, a:hover{
 	display: flex;
     justify-content: flex-end;    
     padding-right: 33px;
-    padding-bottom: 8px;
-    margin-bottom: 100px;
+    padding-bottom: 8px;   
 }
 .footer__txt{
 	font: normal bold 12px/15px Montserrat;
@@ -352,14 +351,18 @@ button, a:hover{
 	}
 	/*-------------------main-------------------*/
 	.main__content{		
-		position: relative;
+		position: relative;		
+		display: grid;
+		justify-content: inherit;
+		overflow: hidden;
 	}
 	.main__picture{
+		height: 100%;
 		width: 100%;
 		padding-left: 0;
 	}
 	.main__photo{		
-		height:100%;/*?*/
+		height:100%;
 		max-width: 768px;
 		margin-right: 0;
 	}
